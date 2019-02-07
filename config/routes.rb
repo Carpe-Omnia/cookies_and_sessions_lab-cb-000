@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   get '/', to: 'products#index'
   get '/products', to: 'products#index'
-  post '/products', to: 'product#add'
+  post '/products', to: 'products#add'
 end

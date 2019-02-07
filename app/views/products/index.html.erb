@@ -1,10 +1,14 @@
+<form action='/products' method='post' >
+  type product name here
+  <input type='text' name='product' id='product' > <br>
+  <input type='submit' name='add to cart' id='add to cart'>
+</form>
 
 <h3> Items in your cart </h3>
-
 <ul>
 <% @products.each do |product| %>
   <li>
     <%= product %>
   </li>
 <% end %>
-</ul>    
+</ul>

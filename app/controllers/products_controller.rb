@@ -1,7 +1,7 @@
-class ProductsController < ApplicationController 
-  def index 
+class ProductsController < ApplicationController
+  def index
     @products = Product.all
-  end 
+  end
   def add
     @product = Product.find_by(id: params[:id])
       

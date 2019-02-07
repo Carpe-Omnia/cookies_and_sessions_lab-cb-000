@@ -7,6 +7,7 @@
 
 <h3> Items in your cart </h3>
 <ul>
+<% @products = cart %> 
 <% @products.each do |product| %>
   <li>
     <%= product %>

@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
     @product = params[:product]
     cart << @product
     @products = cart
-    render :index
+    render 'index'
   end
 
 end

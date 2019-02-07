@@ -3,5 +3,8 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
   def add
-    @product = Product.find_by(id: params[:id])
-      
+    @product = params[:item]
+    cart << @product
+    render :cart
+  end
+end
